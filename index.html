@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+</head>
+<body style="background-image: linear-gradient(to right, #314755 0%, #26a0da 100%)"> 
+    <div class="converter" style="margin-left: 34.5rem; margin-top: 22rem;">
+        <div class="title flex border-1 border-indigo-500">
+            <select id="left" class="mr-20 outline-none w-96 bg-gray-50 border border-gray-300 text-gray-900 text-xl rounded-lg focus:ring-blue-500 focus:border-blue-500 p-5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <option selected>選択する</option>
+                <option value="dollar">Dollar</option>
+                 <option value="rupee">Rupee</option>
+                <option value="euro">Euro</option>
+                <option value="yen">Yen</option>
+            </select>
+            <select id="right" class="w-96 outline-none bg-gray-50 border border-gray-300 text-gray-900 text-xl rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <option selected>選択する</option>
+                <option value="dollar">Dollar</option>
+                <option value="rupee">Rupee</option>
+                <option value="euro">Euro</option>
+                <option value="yen">Yen</option>
+            </select>
+        </div>
+        <div class="values mt-8">
+            <input id="leftinput" type="number" class="outline-none rounded p-5 mr-20 w-96">
+            <input id="rightinput" type="number" class="outline-none rounded p-5 w-96">
+            <!-- <p id="rightinput"></p> -->
+        </div>
+        <button onclick="button()" style="margin-left: 23.7rem;" class="px-5 text-white rounded p-3 mt-8 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">
+            Convert
+          </button>
+          <img onclick="change()" style="position: absolute; margin-left: 25.6rem; margin-top: -14rem;" class="cursor-pointer" src="https://img.icons8.com/external-flatart-icons-solid-flatarticons/30/000000/external-two-arrows-arrows-flatart-icons-solid-flatarticons.png"/>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
